@@ -1,0 +1,35 @@
+/* --- Portfolio Equal-Size Project Containers --- */
+/* Add this block to your existing style.css file. */
+
+#portfolio ul.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+#portfolio ul.features li {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 320px; /* Ensures equal height */
+}
+
+#portfolio ul.features li h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+#portfolio ul.features li p {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+#portfolio ul.features li a {
+  margin-top: auto;
+  text-decoration: none;
+  font-weight: 600;
+}
