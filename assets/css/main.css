@@ -1659,3 +1659,45 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+		/* --- Custom Footer Styles --- */
+
+#footer {
+    /* General positioning and appearance */
+    text-align: center; /* Centers the text and icons */
+    padding: 2rem 0 0 0; /* Add top padding to separate it from content above */
+    margin: 4rem 0 0 0; /* Add margin above the footer */
+    width: 100%;
+    max-width: 100%;
+}
+
+#footer p {
+    /* Styles for the paragraph containing the contact info */
+    margin: 0; /* Remove default paragraph bottom margin */
+    line-height: 2; /* Increased line height for vertical separation (Reach me at, Phone, Email) */
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#footer p strong {
+    /* Targets the 'Reach me at:', 'Phone:', and 'Email:' labels */
+    font-weight: 600; 
+}
+
+#footer p strong i {
+    /* Styles the Phone and Email icons */
+    margin-right: 0.5rem; /* Adds space between the icon and the text label */
+}
+
+/* Social Media Icons List */
+#footer ul.icons {
+    /* This overrides the default left-alignment for the icon list and adds a top margin */
+    margin: 1.5rem 0 0 0; /* Adds space above the icons, separating them from the email text */
+    padding: 0;
+    list-style: none;
+}
+
+#footer ul.icons li {
+    /* Ensures the list items (icons) display correctly and are centered */
+    display: inline-block;
+}
